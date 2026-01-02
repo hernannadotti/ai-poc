@@ -1,11 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const LandingPage = () => {
-  const [year, setYear] = useState<number>(new Date().getFullYear());
-
-  useEffect(() => {
-    setYear(new Date().getFullYear());
-  }, []);
+  const [year] = useState<number>(new Date().getFullYear());
 
   return (
     <div className="min-h-screen bg-black text-white font-helvetica">
