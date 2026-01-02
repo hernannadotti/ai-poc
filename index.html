@@ -220,7 +220,7 @@
         <section>
             <h2>Benefits</h2>
             <ul class="features">
-                <li>Reduce code review time by up to 60%</li>
+                <li>Potentially reduce code review time by up to 60%</li>
                 <li>Improve code quality through consistent AI-driven analysis</li>
                 <li>Accelerate development cycles with automated workflows</li>
                 <li>Enable developers to focus on high-value tasks</li>
@@ -238,8 +238,11 @@
         </section>
 
         <footer>
-            <p>&copy; 2026 AI POC for IPG - Azure DevOps Integration</p>
+            <p>&copy; <span id="year"></span> AI POC for IPG - Azure DevOps Integration</p>
         </footer>
     </div>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
