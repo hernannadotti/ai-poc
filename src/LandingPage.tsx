@@ -11,15 +11,15 @@ const LandingPage = () => {
   const processItems = [
     {
       title: 'High velocity',
-      description: 'Implementaion is very high velocity approximately over 4,100 meters',
+      description: 'Implementation is very high velocity approximately over 4,100 meters',
     },
     {
       title: 'High quality',
-      description: 'Implementaion is very high velocity approximately over 4,100 meters',
+      description: 'Implementation is very high velocity approximately over 4,100 meters',
     },
     {
-      title: 'Evicient',
-      description: 'Excellence, objective, extremely good or impressibe in a way that is unusual',
+      title: 'Efficient',
+      description: 'Excellence, objective, extremely good or impressive in a way that is unusual',
     },
     {
       title: 'Ego-Free',
@@ -116,7 +116,7 @@ const LandingPage = () => {
               <h3 className="text-lg font-bold mb-4">Work</h3>
               <p className="text-gray-600 mb-6">Our Portfolio of completed works</p>
               <button className="px-6 py-3 bg-white border-2 border-gray-900 rounded-full font-medium hover:bg-gray-900 hover:text-white transition flex items-center gap-2">
-                Check Protfolio
+                Check Portfolio
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
@@ -149,7 +149,7 @@ const LandingPage = () => {
             </div>
           </div>
           <div>
-            <h2 className="text-4xl font-bold mb-6">Our Proccess</h2>
+            <h2 className="text-4xl font-bold mb-6">Our Process</h2>
             <p className="text-gray-600 mb-8">How we are work on this part. This is our work process.</p>
             <div className="grid grid-cols-2 gap-6">
               {processItems.map((item, index) => (
@@ -214,7 +214,7 @@ const LandingPage = () => {
                 R
               </div>
             </div>
-            <h2 className="text-3xl font-bold mb-8">Subscrive to get the<br />latest updates</h2>
+            <h2 className="text-3xl font-bold mb-8">Subscribe to get the<br />latest updates</h2>
             <div className="flex gap-4">
               <input
                 type="email"
