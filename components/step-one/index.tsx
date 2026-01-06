@@ -93,7 +93,13 @@ const StepOne: React.FC = () => {
     'Other',
   ];
 
-  const breeds = formData.petType === 'Dog' ? dogBreeds : formData.petType === 'Cat' ? catBreeds : ['Select Breed'];
+  const getBreedsByPetType = (petType: string) => {
+    if (petType === 'Dog') return dogBreeds;
+    if (petType === 'Cat') return catBreeds;
+    return ['Select Breed'];
+  };
+
+  const breeds = getBreedsByPetType(formData.petType);
   const ages = Array.from({ length: 31 }, (_, i) => i);
 
   return (
@@ -228,8 +234,8 @@ const StepOne: React.FC = () => {
                   required
                   disabled={!formData.petType}
                 >
-                  {breeds.map((breed) => (
-                    <option key={breed} value={breed} disabled={breed === 'Select Breed'}>
+                  {breeds.map((breed, index) => (
+                    <option key={index} value={breed} disabled={breed === 'Select Breed'}>
                       {breed}
                     </option>
                   ))}
@@ -257,8 +263,8 @@ const StepOne: React.FC = () => {
                   <option value="" disabled>
                     Select Age
                   </option>
-                  {ages.map((age) => (
-                    <option key={age} value={age}>
+                  {ages.map((age, index) => (
+                    <option key={index} value={age}>
                       {age} {age === 1 ? 'year' : 'years'}
                     </option>
                   ))}
