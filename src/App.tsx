@@ -1,7 +1,7 @@
-import LandingPage from './LandingPage'
+import StepOne from '../components/step-one'
 
 function App() {
-  return <LandingPage />
+  return <StepOne />
 }
 
 export default App
