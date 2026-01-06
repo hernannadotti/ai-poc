@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import backgroundImage from '../../src/assets/images/Mobile_1280x900.svg';
+import canadianIcon from '../../src/assets/images/proudly-canadian-icon.svg';
 
 interface FormData {
   petName: string;
@@ -95,17 +97,17 @@ const StepOne: React.FC = () => {
   const ages = Array.from({ length: 31 }, (_, i) => i);
 
   return (
-    <div className="min-h-screen bg-cover bg-center bg-no-repeat font-['Vag-Rounded'] relative overflow-hidden">
+    <div className="min-h-screen bg-cover bg-center bg-no-repeat font-vag-rounded relative overflow-hidden">
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat -z-10"
-        style={{ backgroundImage: `url('/src/assets/images/Mobile_1280x900.svg')` }}
+        style={{ backgroundImage: `url('${backgroundImage}')` }}
       />
       
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-8 sm:px-6 lg:px-8">
         <div className="w-full max-w-md">
           <div className="flex justify-center mb-6 sm:mb-8">
             <img 
-              src="/src/assets/images/proudly-canadian-icon.svg" 
+              src={canadianIcon} 
               alt="Proudly Canadian" 
               className="h-16 w-16 sm:h-20 sm:w-20"
             />
@@ -323,7 +325,7 @@ const StepOne: React.FC = () => {
           </div>
 
           <p className="text-center text-white text-xs sm:text-sm mt-6 drop-shadow-lg">
-            © 2026 Pets Plus Us Pet Insurance. All rights reserved.
+            © {new Date().getFullYear()} Pets Plus Us Pet Insurance. All rights reserved.
           </p>
         </div>
       </div>
