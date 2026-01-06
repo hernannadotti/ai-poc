@@ -162,7 +162,10 @@ const StepOne: React.FC = () => {
                 <div className="grid grid-cols-2 gap-3">
                   <button
                     type="button"
-                    onClick={() => handleInputChange('petType', 'Dog')}
+                    onClick={() => {
+                      handleInputChange('petType', 'Dog');
+                      handleInputChange('petBreed', '');
+                    }}
                     className={`py-3 px-4 rounded-full font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 text-sm sm:text-base ${
                       formData.petType === 'Dog'
                         ? 'bg-blue-600 text-white shadow-lg scale-105'
@@ -173,7 +176,10 @@ const StepOne: React.FC = () => {
                   </button>
                   <button
                     type="button"
-                    onClick={() => handleInputChange('petType', 'Cat')}
+                    onClick={() => {
+                      handleInputChange('petType', 'Cat');
+                      handleInputChange('petBreed', '');
+                    }}
                     className={`py-3 px-4 rounded-full font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 text-sm sm:text-base ${
                       formData.petType === 'Cat'
                         ? 'bg-blue-600 text-white shadow-lg scale-105'
@@ -234,8 +240,8 @@ const StepOne: React.FC = () => {
                   required
                   disabled={!formData.petType}
                 >
-                  {breeds.map((breed, index) => (
-                    <option key={index} value={breed} disabled={breed === 'Select Breed'}>
+                  {breeds.map((breed) => (
+                    <option key={breed} value={breed} disabled={breed === 'Select Breed'}>
                       {breed}
                     </option>
                   ))}
@@ -263,8 +269,8 @@ const StepOne: React.FC = () => {
                   <option value="" disabled>
                     Select Age
                   </option>
-                  {ages.map((age, index) => (
-                    <option key={index} value={age}>
+                  {ages.map((age) => (
+                    <option key={age} value={age}>
                       {age} {age === 1 ? 'year' : 'years'}
                     </option>
                   ))}
