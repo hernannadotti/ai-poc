@@ -111,15 +111,12 @@ const StepOne: React.FC = () => {
       
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-8 sm:px-6 lg:px-8">
         <div className="w-full max-w-md">
-          <div className="flex justify-center mb-6 sm:mb-8">
+          <div className="bg-white rounded-3xl shadow-2xl p-6 sm:p-8 backdrop-blur-sm bg-opacity-95 relative">
             <img 
               src={canadianIcon} 
               alt="Proudly Canadian" 
-              className="h-16 w-16 sm:h-20 sm:w-20"
+              className="absolute -top-8 right-4 h-16 w-16 sm:h-20 sm:w-20"
             />
-          </div>
-
-          <div className="bg-white rounded-3xl shadow-2xl p-6 sm:p-8 backdrop-blur-sm bg-opacity-95">
             <h1 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-8 text-gray-800">
               Get Your Pet Insurance Quote
             </h1>
@@ -134,7 +131,7 @@ const StepOne: React.FC = () => {
                   id="petName"
                   value={formData.petName}
                   onChange={(e) => handleInputChange('petName', e.target.value)}
-                  className="w-full px-4 py-2.5 sm:py-3 border border-gray-300 rounded-full focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-sm sm:text-base"
+                  className="w-full px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-sm sm:text-base"
                   placeholder="Enter your pet's name"
                   required
                 />
@@ -149,7 +146,7 @@ const StepOne: React.FC = () => {
                   id="postalCode"
                   value={formData.postalCode}
                   onChange={(e) => handleInputChange('postalCode', e.target.value)}
-                  className="w-full px-4 py-2.5 sm:py-3 border border-gray-300 rounded-full focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-sm sm:text-base"
+                  className="w-full px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-sm sm:text-base"
                   placeholder="A1A 1A1"
                   required
                 />
@@ -166,7 +163,7 @@ const StepOne: React.FC = () => {
                       handleInputChange('petType', 'Dog');
                       handleInputChange('petBreed', '');
                     }}
-                    className={`py-3 px-4 rounded-full font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 text-sm sm:text-base ${
+                    className={`py-3 px-4 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 text-sm sm:text-base ${
                       formData.petType === 'Dog'
                         ? 'bg-blue-600 text-white shadow-lg scale-105'
                         : 'bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-300'
@@ -180,7 +177,7 @@ const StepOne: React.FC = () => {
                       handleInputChange('petType', 'Cat');
                       handleInputChange('petBreed', '');
                     }}
-                    className={`py-3 px-4 rounded-full font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 text-sm sm:text-base ${
+                    className={`py-3 px-4 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 text-sm sm:text-base ${
                       formData.petType === 'Cat'
                         ? 'bg-blue-600 text-white shadow-lg scale-105'
                         : 'bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-300'
@@ -199,7 +196,7 @@ const StepOne: React.FC = () => {
                   <button
                     type="button"
                     onClick={() => handleInputChange('petGender', 'Male')}
-                    className={`py-3 px-4 rounded-full font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 text-sm sm:text-base ${
+                    className={`py-3 px-4 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 text-sm sm:text-base ${
                       formData.petGender === 'Male'
                         ? 'bg-blue-600 text-white shadow-lg scale-105'
                         : 'bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-300'
@@ -210,7 +207,7 @@ const StepOne: React.FC = () => {
                   <button
                     type="button"
                     onClick={() => handleInputChange('petGender', 'Female')}
-                    className={`py-3 px-4 rounded-full font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 text-sm sm:text-base ${
+                    className={`py-3 px-4 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 text-sm sm:text-base ${
                       formData.petGender === 'Female'
                         ? 'bg-blue-600 text-white shadow-lg scale-105'
                         : 'bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-300'
@@ -229,7 +226,7 @@ const StepOne: React.FC = () => {
                   id="petBreed"
                   value={formData.petBreed}
                   onChange={(e) => handleInputChange('petBreed', e.target.value)}
-                  className="w-full px-4 py-2.5 sm:py-3 border border-gray-300 rounded-full focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all appearance-none bg-white text-sm sm:text-base"
+                  className="w-full px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all appearance-none bg-white text-sm sm:text-base"
                   style={{
                     backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E")`,
                     backgroundPosition: 'right 1rem center',
@@ -256,7 +253,7 @@ const StepOne: React.FC = () => {
                   id="petAge"
                   value={formData.petAge}
                   onChange={(e) => handleInputChange('petAge', e.target.value)}
-                  className="w-full px-4 py-2.5 sm:py-3 border border-gray-300 rounded-full focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all appearance-none bg-white text-sm sm:text-base"
+                  className="w-full px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all appearance-none bg-white text-sm sm:text-base"
                   style={{
                     backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E")`,
                     backgroundPosition: 'right 1rem center',
@@ -286,7 +283,7 @@ const StepOne: React.FC = () => {
                   id="email"
                   value={formData.email}
                   onChange={(e) => handleInputChange('email', e.target.value)}
-                  className="w-full px-4 py-2.5 sm:py-3 border border-gray-300 rounded-full focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-sm sm:text-base"
+                  className="w-full px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-sm sm:text-base"
                   placeholder="you@example.com"
                   required
                 />
@@ -301,7 +298,7 @@ const StepOne: React.FC = () => {
                   id="promoCode"
                   value={formData.promoCode}
                   onChange={(e) => handleInputChange('promoCode', e.target.value)}
-                  className="w-full px-4 py-2.5 sm:py-3 border border-gray-300 rounded-full focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-sm sm:text-base"
+                  className="w-full px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-sm sm:text-base"
                   placeholder="Enter code (optional)"
                 />
               </div>
@@ -329,7 +326,7 @@ const StepOne: React.FC = () => {
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-3.5 sm:py-4 px-6 rounded-full shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 text-base sm:text-lg mt-2"
+                className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-3.5 sm:py-4 px-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 text-base sm:text-lg mt-2"
               >
                 Get Pricing
               </button>
