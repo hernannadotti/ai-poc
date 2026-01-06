@@ -241,7 +241,7 @@ const StepOne: React.FC = () => {
                   disabled={!formData.petType}
                 >
                   {breeds.map((breed) => (
-                    <option key={breed} value={breed} disabled={breed === 'Select Breed'}>
+                    <option key={breed} value={breed === 'Select Breed' ? '' : breed} disabled={breed === 'Select Breed'}>
                       {breed}
                     </option>
                   ))}
