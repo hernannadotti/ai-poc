@@ -120,7 +120,7 @@ const StepOne: React.FC = () => {
             <img 
               src={canadianIcon} 
               alt="Proudly Canadian" 
-              className="absolute -top-6 -right-6 h-20 w-20"
+              className="absolute top-4 right-4 h-16 w-16"
             />
             <h1 className="text-3xl sm:text-4xl font-bold text-center mb-2 text-[#2D3E8F]">
               ABOUT MY PETS
