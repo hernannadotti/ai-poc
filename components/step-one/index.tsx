@@ -105,7 +105,7 @@ const StepOne: React.FC = () => {
   return (
     <div className="min-h-screen bg-cover bg-center bg-no-repeat font-vag-rounded relative overflow-hidden">
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat -z-10"
+        className="absolute inset-0 bg-cover-image -z-10"
         style={{ backgroundImage: `url('${backgroundImage}')` }}
       />
       
@@ -226,14 +226,7 @@ const StepOne: React.FC = () => {
                   id="petBreed"
                   value={formData.petBreed}
                   onChange={(e) => handleInputChange('petBreed', e.target.value)}
-                  className="w-full px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all appearance-none bg-white text-sm sm:text-base"
-                  style={{
-                    backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E")`,
-                    backgroundPosition: 'right 1rem center',
-                    backgroundRepeat: 'no-repeat',
-                    backgroundSize: '1.5em 1.5em',
-                    paddingRight: '2.5rem',
-                  }}
+                  className="w-full px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white text-sm sm:text-base select-with-arrow"
                   required
                   disabled={!formData.petType}
                 >
@@ -253,14 +246,7 @@ const StepOne: React.FC = () => {
                   id="petAge"
                   value={formData.petAge}
                   onChange={(e) => handleInputChange('petAge', e.target.value)}
-                  className="w-full px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all appearance-none bg-white text-sm sm:text-base"
-                  style={{
-                    backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E")`,
-                    backgroundPosition: 'right 1rem center',
-                    backgroundRepeat: 'no-repeat',
-                    backgroundSize: '1.5em 1.5em',
-                    paddingRight: '2.5rem',
-                  }}
+                  className="w-full px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white text-sm sm:text-base select-with-arrow"
                   required
                 >
                   <option value="" disabled>

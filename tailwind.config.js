@@ -11,6 +11,9 @@ export default {
         'helvetica': ['"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
         'vag-rounded': ['Vag-Rounded', 'Arial', 'sans-serif'],
       },
+      colors: {
+        'dropdown-arrow-gray': '#6b7280',
+      },
     },
   },
   plugins: [],
