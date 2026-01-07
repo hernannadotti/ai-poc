@@ -115,11 +115,14 @@ const StepOne: React.FC = () => {
             <img 
               src={canadianIcon} 
               alt="Proudly Canadian" 
-              className="absolute top-4 right-4 h-12 w-12"
+              className="absolute -top-6 -right-6 h-20 w-20"
             />
-            <h1 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-8 text-gray-800">
-              About my Pets
+            <h1 className="text-3xl sm:text-4xl font-bold text-center mb-2 text-[#2D3E8F]">
+              ABOUT MY PETS
             </h1>
+            <p className="text-center text-gray-600 mb-6 sm:mb-8 text-sm sm:text-base">
+              First, let's get to know your pet better.
+            </p>
 
             <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
               <div>
@@ -326,7 +329,7 @@ const StepOne: React.FC = () => {
 
               <button
                 type="submit"
-                className="w-full bg-[#1D4ED8] hover:bg-[#1E40AF] text-white font-bold py-3.5 sm:py-4 px-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1D4ED8] text-base sm:text-lg mt-2"
+                className="w-full bg-[#3B3DBF] hover:bg-[#2D2E9F] text-white font-bold py-3.5 sm:py-4 px-6 rounded-full shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#3B3DBF] text-base sm:text-lg mt-2"
               >
                 Get Pricing
               </button>
