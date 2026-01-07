@@ -115,7 +115,7 @@ const StepOne: React.FC = () => {
       </header>
       
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-8 sm:px-6 lg:px-8">
-        <div className="w-full max-w-md">
+        <div className="w-full" style={{ maxWidth: '656px' }}>
           <div className="bg-white rounded-3xl shadow-2xl p-6 sm:p-8 backdrop-blur-sm bg-opacity-95 relative">
             <img 
               src={canadianIcon} 
