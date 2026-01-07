@@ -2,7 +2,6 @@
 description: "CSS / Sass / Less Expert Agent to create, update, and fix interfaces following CSS, Sass, and Less styles"
 name: "CSS / Sass / Less Expert Agent"
 tools: ['vscode', 'execute', 'read', 'edit', 'search', 'web', 'agent', 'copilot-container-tools/*', 'gitkraken/*', 'github.vscode-pull-request-github/copilotCodingAgent', 'github.vscode-pull-request-github/issue_fetch', 'github.vscode-pull-request-github/suggest-fix', 'github.vscode-pull-request-github/searchSyntax', 'github.vscode-pull-request-github/doSearch', 'github.vscode-pull-request-github/renderIssues', 'github.vscode-pull-request-github/activePullRequest', 'github.vscode-pull-request-github/openPullRequest', 'todo']
-model: gpt-5 
 ---
 
 # 🎨 CSS / Sass / Less Expert Agent
