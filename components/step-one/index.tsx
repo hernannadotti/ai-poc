@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import backgroundImage from '../../src/assets/images/Mobile_1280x900.svg';
 import canadianIcon from '../../src/assets/images/proudly-canadian-icon.svg';
+import ppuLogo from '../../src/assets/images/ppu-logo.svg';
 
 interface FormData {
   petName: string;
@@ -109,8 +110,12 @@ const StepOne: React.FC = () => {
         style={{ backgroundImage: `url('${backgroundImage}')` }}
       />
       
+      <header className="relative z-20 flex items-center px-4 py-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#3B3FB6' }}>
+        <img src={ppuLogo} alt="PPU Logo" className="h-12 sm:h-16" />
+      </header>
+      
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-8 sm:px-6 lg:px-8">
-        <div className="w-full max-w-md">
+        <div className="w-full" style={{ maxWidth: '656px' }}>
           <div className="bg-white rounded-3xl shadow-2xl p-6 sm:p-8 backdrop-blur-sm bg-opacity-95 relative">
             <img 
               src={canadianIcon} 
