@@ -4,6 +4,8 @@
 
 @layer base {
   :root {
+    /* Dropdown arrow color - gray-500 equivalent */
+    /* Note: CSS variables cannot be used in SVG data URLs, so the hex value is duplicated in .select-with-arrow */
     --color-dropdown-arrow: #6b7280;
   }
 }
@@ -17,6 +19,7 @@
 
   .select-with-arrow {
     appearance: none;
+    /* Using hex color #6b7280 (var(--color-dropdown-arrow)) - CSS variables not supported in data URLs */
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
     background-position: right 1rem center;
     background-repeat: no-repeat;
