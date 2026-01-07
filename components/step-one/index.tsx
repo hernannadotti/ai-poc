@@ -118,7 +118,7 @@ const StepOne: React.FC = () => {
               className="absolute top-4 right-4 h-12 w-12"
             />
             <h1 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-8 text-gray-800">
-              Get Your Pet Insurance Quote
+              About my Pets
             </h1>
 
             <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
@@ -326,7 +326,7 @@ const StepOne: React.FC = () => {
 
               <button
                 type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 sm:py-4 px-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 text-base sm:text-lg mt-2"
+                className="w-full bg-[#1D4ED8] hover:bg-[#1E40AF] text-white font-bold py-3.5 sm:py-4 px-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 text-base sm:text-lg mt-2"
               >
                 Get Pricing
               </button>
