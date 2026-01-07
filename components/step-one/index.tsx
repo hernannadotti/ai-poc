@@ -115,15 +115,18 @@ const StepOne: React.FC = () => {
             <img 
               src={canadianIcon} 
               alt="Proudly Canadian" 
-              className="absolute -top-8 right-4 h-16 w-16 sm:h-20 sm:w-20"
+              className="absolute -top-6 -right-6 h-20 w-20"
             />
-            <h1 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-8 text-gray-800">
-              Get Your Pet Insurance Quote
+            <h1 className="text-3xl sm:text-4xl font-bold text-center mb-2 text-[#2D3E8F]">
+              ABOUT MY PETS
             </h1>
+            <p className="text-center text-gray-600 mb-6 sm:mb-8 text-sm sm:text-base">
+              First, let's get to know your pet better.
+            </p>
 
             <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
               <div>
-                <label htmlFor="petName" className="block text-sm font-medium text-gray-700 mb-1.5">
+                <label htmlFor="petName" className="block text-sm font-semibold text-gray-900 mb-1.5">
                   Pet Name
                 </label>
                 <input
@@ -138,7 +141,7 @@ const StepOne: React.FC = () => {
               </div>
 
               <div>
-                <label htmlFor="postalCode" className="block text-sm font-medium text-gray-700 mb-1.5">
+                <label htmlFor="postalCode" className="block text-sm font-semibold text-gray-900 mb-1.5">
                   Postal Code
                 </label>
                 <input
@@ -153,7 +156,7 @@ const StepOne: React.FC = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-sm font-semibold text-gray-900 mb-2">
                   Pet Type
                 </label>
                 <div className="grid grid-cols-2 gap-3">
@@ -189,7 +192,7 @@ const StepOne: React.FC = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-sm font-semibold text-gray-900 mb-2">
                   Pet Gender
                 </label>
                 <div className="grid grid-cols-2 gap-3">
@@ -219,7 +222,7 @@ const StepOne: React.FC = () => {
               </div>
 
               <div>
-                <label htmlFor="petBreed" className="block text-sm font-medium text-gray-700 mb-1.5">
+                <label htmlFor="petBreed" className="block text-sm font-semibold text-gray-900 mb-1.5">
                   Pet Breed
                 </label>
                 <select
@@ -239,7 +242,7 @@ const StepOne: React.FC = () => {
               </div>
 
               <div>
-                <label htmlFor="petAge" className="block text-sm font-medium text-gray-700 mb-1.5">
+                <label htmlFor="petAge" className="block text-sm font-semibold text-gray-900 mb-1.5">
                   Pet Age
                 </label>
                 <select
@@ -261,7 +264,7 @@ const StepOne: React.FC = () => {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1.5">
+                <label htmlFor="email" className="block text-sm font-semibold text-gray-900 mb-1.5">
                   Email Address
                 </label>
                 <input
@@ -276,7 +279,7 @@ const StepOne: React.FC = () => {
               </div>
 
               <div>
-                <label htmlFor="promoCode" className="block text-sm font-medium text-gray-700 mb-1.5">
+                <label htmlFor="promoCode" className="block text-sm font-semibold text-gray-900 mb-1.5">
                   Partner or Promo Code
                 </label>
                 <input
@@ -312,7 +315,7 @@ const StepOne: React.FC = () => {
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-3.5 sm:py-4 px-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 text-base sm:text-lg mt-2"
+                className="w-full bg-[#3B3DBF] hover:bg-[#2D2E9F] text-white font-bold py-3.5 sm:py-4 px-6 rounded-full shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#3B3DBF] text-base sm:text-lg mt-2"
               >
                 Get Pricing
               </button>
