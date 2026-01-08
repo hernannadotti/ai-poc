@@ -1,3 +1,7 @@
+# ⚠️ Experimental Project
+
+This project is experimental and we are exploring some improvements in terms of keep making Agents better and better.
+
 # AI POC - Azure DevOps Integration
 
 AI Proof of Concept for IPG demonstrating AI agent integration with Azure DevOps.
@@ -63,3 +67,4 @@ src/
 ├── main.tsx         # Entry point
 └── index.css        # Tailwind imports and global styles
 ```
+
