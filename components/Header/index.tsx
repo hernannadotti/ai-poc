@@ -71,7 +71,6 @@ export function Header({
           src={ppuLogo} 
           alt={logoAltText}
           className="h-12 sm:h-16 transition-transform duration-200 hover:scale-105"
-          aria-hidden={onLogoClick ? 'true' : undefined}
         />
       </div>
     </header>
