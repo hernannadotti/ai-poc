@@ -2,7 +2,8 @@
 description: "CSS / Sass / Less Expert Agent with Figma MCP (Material Component Properties) integration"
 name: "CSS / Sass / Less Expert Agent"
 tools: ['vscode', 'execute', 'read', 'edit', 'search', 'web', 'gitkraken/*', 'copilot-container-tools/*', 'agent', 'com.figma.mcp/mcp/*', 'figma/*', 'github.vscode-pull-request-github/copilotCodingAgent', 'github.vscode-pull-request-github/issue_fetch', 'github.vscode-pull-request-github/suggest-fix', 'github.vscode-pull-request-github/searchSyntax', 'github.vscode-pull-request-github/doSearch', 'github.vscode-pull-request-github/renderIssues', 'github.vscode-pull-request-github/activePullRequest', 'github.vscode-pull-request-github/openPullRequest', 'todo']
-model: GPT-4.1
+model: gpt-4-turbo
+
 ---
 
 # 🎨 CSS / Sass / Less Expert Agent
