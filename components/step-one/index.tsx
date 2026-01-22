@@ -325,21 +325,25 @@ const StepOne: React.FC = () => {
                 Get Pricing
               </button>
 
-              <button
-                type="button"
-                onClick={() => setShowPayload(!showPayload)}
-                className="w-full bg-[#FAFAFA] hover:bg-[#E5E5E5] text-gray-800 font-bold py-3.5 sm:py-4 px-6 rounded-full shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 text-base sm:text-lg mt-4"
-              >
-                See Payload
-              </button>
+              {import.meta.env.DEV && (
+                <>
+                  <button
+                    type="button"
+                    onClick={() => setShowPayload(!showPayload)}
+                    className="w-full bg-[#FAFAFA] hover:bg-[#E5E5E5] text-gray-800 font-bold py-3.5 sm:py-4 px-6 rounded-full shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 text-base sm:text-lg mt-4"
+                  >
+                    See Payload
+                  </button>
 
-              {showPayload && (
-                <div className="mt-4 p-4 bg-gray-100 rounded-lg border border-gray-300">
-                  <h3 className="text-sm font-semibold text-gray-900 mb-2">Form Payload:</h3>
-                  <pre className="text-xs text-gray-700 overflow-x-auto whitespace-pre-wrap break-words">
-                    {JSON.stringify(formData, null, 2)}
-                  </pre>
-                </div>
+                  {showPayload && (
+                    <div className="mt-4 p-4 bg-gray-100 rounded-lg border border-gray-300">
+                      <h3 className="text-sm font-semibold text-gray-900 mb-2">Form Payload:</h3>
+                      <pre className="text-xs text-gray-700 overflow-x-auto whitespace-pre-wrap break-words">
+                        {JSON.stringify(formData, null, 2)}
+                      </pre>
+                    </div>
+                  )}
+                </>
               )}
             </form>
           </div>
