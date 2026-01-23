@@ -28,9 +28,13 @@ const StepOne: React.FC = () => {
     termsAccepted: false,
   });
 
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [showPayload, setShowPayload] = useState(false);
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
+    setIsSubmitted(true);
   };
 
   const handleInputChange = (field: keyof FormData, value: string | boolean) => {
@@ -323,6 +327,27 @@ const StepOne: React.FC = () => {
                 Get Pricing
               </button>
             </form>
+
+            {isSubmitted && (
+              <div className="mt-4">
+                <button
+                  type="button"
+                  onClick={() => setShowPayload(!showPayload)}
+                  className="w-full bg-[#F0F0F0] hover:bg-[#E0E0E0] text-gray-800 font-semibold py-3 px-6 rounded-lg shadow transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 text-sm sm:text-base"
+                >
+                  See Payload
+                </button>
+                
+                {showPayload && (
+                  <div className="mt-4 p-4 bg-gray-50 border border-gray-200 rounded-lg">
+                    <h3 className="font-bold text-gray-900 mb-2">Form Payload:</h3>
+                    <pre className="text-xs sm:text-sm text-gray-700 whitespace-pre-wrap break-words">
+                      {JSON.stringify(formData, null, 2)}
+                    </pre>
+                  </div>
+                )}
+              </div>
+            )}
           </div>
 
           <p className="text-center text-white text-xs sm:text-sm mt-6 drop-shadow-lg">
