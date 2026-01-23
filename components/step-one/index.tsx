@@ -27,6 +27,7 @@ const StepOne: React.FC = () => {
     promoCode: '',
     termsAccepted: false,
   });
+  const [showPayload, setShowPayload] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -323,6 +324,23 @@ const StepOne: React.FC = () => {
                 Get Pricing
               </button>
             </form>
+
+            <button
+              type="button"
+              onClick={() => setShowPayload(!showPayload)}
+              className="w-full bg-[#FAFAFA] hover:bg-gray-200 text-gray-700 font-semibold py-2.5 sm:py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 text-sm sm:text-base mt-4"
+            >
+              {showPayload ? 'do not see payload' : 'See Payload'}
+            </button>
+
+            {showPayload && (
+              <div className="mt-4 p-4 bg-gray-50 rounded-lg border border-gray-200">
+                <h3 className="text-sm font-semibold text-gray-700 mb-2">Form Data (Payload):</h3>
+                <pre className="text-xs text-gray-600 overflow-auto">
+                  {JSON.stringify(formData, null, 2)}
+                </pre>
+              </div>
+            )}
           </div>
 
           <p className="text-center text-white text-xs sm:text-sm mt-6 drop-shadow-lg">
