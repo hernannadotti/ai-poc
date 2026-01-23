@@ -330,7 +330,7 @@ const StepOne: React.FC = () => {
                   <button
                     type="button"
                     onClick={() => setShowPayload(!showPayload)}
-                    className="w-full bg-[#FAFAFA] hover:bg-[#E5E5E5] text-gray-800 font-bold py-3.5 sm:py-4 px-6 rounded-full shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 text-base sm:text-lg mt-4"
+                    className="w-full bg-[#86EFAC] hover:bg-[#6EE7B7] text-gray-800 font-bold py-3.5 sm:py-4 px-6 rounded-full shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-400 text-base sm:text-lg mt-4"
                   >
                     See Payload
                   </button>
