@@ -330,7 +330,7 @@ const StepOne: React.FC = () => {
               onClick={() => setShowPayload(!showPayload)}
               className="w-full bg-[#FAFAFA] hover:bg-gray-200 text-gray-700 font-semibold py-2.5 sm:py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 text-sm sm:text-base mt-4"
             >
-              {showPayload ? 'Hide Payload' : 'See Payload'}
+              {showPayload ? 'do not see payload' : 'See Payload'}
             </button>
 
             {showPayload && (
